@@ -14,12 +14,13 @@ const title = 'sekkei（設計）１００'
     <div w-full text="left" font-mono mb-2 mb-4 text-2xl font-bold>
       {{ title }}
     </div>
-    <div flex="~" flex-wrap justify-between text-xl class="w-300px">
+    <div flex="~" flex-wrap justify-between text-xl class="w-500px">
       <a
         v-for="project in projects"
         :key="project.id"
         block
         mr-4
+        mb-3
         font-400
         cursor-pointer
         class="group"

@@ -6,10 +6,16 @@ interface Project {
 export const useAppStore = defineStore('app', {
   state: () => {
     return {
-      projects: [{
-        id: 1,
-        name: 'plum blossom',
-      }] as Project[],
+      projects: [
+        {
+          id: 1,
+          name: 'plum blossom',
+        },
+        {
+          id: 2,
+          name: 'Risograph Grain Light Effect',
+        },
+      ] as Project[],
     }
   },
 })
