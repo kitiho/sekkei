@@ -6,11 +6,13 @@ import App from './App.vue'
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
+import store from './store'
 
 const app = createApp(App)
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
+app.use(store)
 app.use(router)
 app.mount('#app')
