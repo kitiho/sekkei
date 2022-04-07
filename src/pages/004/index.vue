@@ -51,10 +51,11 @@ onMounted(() => {
   <div w-full h-full>
     <canvas ref="webgl" fixed top-0 left-0 w-full h-full class="webgl" />
     <section
-      v-for="item in sections"
+      v-for="(item,index) in sections"
       :key="item"
       flex="~"
       items-center
+      :class="`${index === 1 ? 'justify-end':''}`"
       h-100vh
       relative
       font-mono
@@ -62,7 +63,7 @@ onMounted(() => {
       text-7vmin
       class="px-10% text-#ffeded"
     >
-      <h1 justify-end>
+      <h1>
         {{ item }}
       </h1>
     </section>
