@@ -122,37 +122,39 @@ onMounted(() => {
 </script>
 <template>
   <div w-full h-full flex="~" flex-col items-center justify-center>
-    <div text-gray-700 font-mono text-xl text-center mb-4>
+    <div class="text-gray-600/50" font-mono text-2xl text-center mb-4>
       Sparkline Graph
     </div>
-    <ul class="controls-list">
-      <li>
+    <ul class="controls-list" flex="~">
+      <li mx-4 flex="~" items-center>
         <input id="c-purple" type="radio" name="color scheme" value="purple">
-        <label for="c-purple">Purple</label>
+        <label for="c-purple" ml-1 font-mono>Purple</label>
       </li>
-      <li>
+      <li mx-4 flex="~" items-center>
         <input id="c-red" type="radio" name="color scheme" value="red">
-        <label for="c-red">Red</label>
+        <label for="c-red" ml-1 font-mono>Red</label>
       </li>
-      <li>
+      <li mx-4 flex="~" items-center>
         <input id="c-blue" type="radio" name="color scheme" value="blue">
-        <label for="c-blue">Blue</label>
+        <label for="c-blue" ml-1 font-mono>Blue</label>
       </li>
-    </ul>Markup
+    </ul>
     <div id="chart-wrapper" w-600px data-wrapper>
-      <div>
-        <h3 data-heading>
+      <div mt-5>
+        <h3 data-heading font-mono text-xl>
           Weekly downloads
         </h3>
-        <p data-total>
+        <p data-total font-mono text-xl>
           800
         </p>
       </div>
       <figure data-chart />
     </div>
-    <div font-mono>
+    <div font-mono mt-4>
       Tutorial ->
       <a
+        class="hover:text-blueGray-600/70"
+        hover:underline
         href="https://tympanus.net/codrops/2022/03/29/building-an-interactive-sparkline-graph-with-d3"
       >Sparkline Graph</a>
     </div>
