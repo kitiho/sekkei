@@ -15,6 +15,10 @@ export const useAppStore = defineStore('app', {
           id: 2,
           name: 'Risograph Grain Light Effect',
         },
+        {
+          id: 3,
+          name: 'Sparkline Graph',
+        },
       ] as Project[],
     }
   },

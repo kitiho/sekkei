@@ -9,3 +9,31 @@ body,
 html.dark {
   background: #121212;
 }
+:root {
+  --textHeadingColor: rgb(117, 117, 117);
+  --fill: hsl(258.1, 100%, 92%);
+  --stroke: hsl(258.1, 100%, 66.9%);
+}
+.red {
+  --stroke: hsl(338 100% 50%);
+  --fill: hsl(338 100% 83%);
+  --marker: hsl(277 100% 50%);
+  --textHeadingColor: hsl(277 5% 9%);
+
+  background-color: hsl(338 100% 93%);
+  color: hsl(277 5% 9%);
+}
+
+.blue {
+  --stroke: hsl(173 82% 46%);
+  --fill: hsl(173 82% 56% / 0.2);
+  --marker: hsl(183 100% 99%);
+  --textHeadingColor: var(--stroke);
+
+  background-color: hsl(211 16% 12%);
+  color: white;
+  color-scheme: dark;
+}
+.controls-list {
+  accent-color: var(--stroke);
+}

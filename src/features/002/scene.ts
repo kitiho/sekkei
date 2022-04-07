@@ -2,7 +2,7 @@ import glslify from 'glslify'
 import * as THREE from 'three'
 import type { PerspectiveCamera, Scene as ThreeScene, WebGLRenderer } from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import vertexShader from '~/features/002/vertexShader.glsl?raw'
+// import vertexShader from '~/features/002/vertexShader.glsl?raw'
 import fragmentShader from '~/features/002/fragmentShader.glsl?raw'
 import 'glsl-noise/simplex/2d.glsl?raw'
 
