@@ -1,25 +1,10 @@
 import { defineStore } from 'pinia'
-interface Project {
-  id: number
-  name: string
-}
+import { projects } from '~/constants'
+
 export const useAppStore = defineStore('app', {
   state: () => {
     return {
-      projects: [
-        {
-          id: 1,
-          name: 'plum blossom',
-        },
-        {
-          id: 2,
-          name: 'Risograph Grain Light Effect',
-        },
-        {
-          id: 3,
-          name: 'Sparkline Graph',
-        },
-      ] as Project[],
+      projects,
     }
   },
 })

@@ -18,6 +18,7 @@ const title = 'sekkei（設計）１００'
       <a
         v-for="project in projects"
         :key="project.id"
+        w-full
         block
         mr-4
         mb-3
