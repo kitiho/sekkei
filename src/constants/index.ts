@@ -19,4 +19,8 @@ export const projects: Project[] = [
     id: 4,
     name: 'Crafting Scroll',
   },
+  {
+    id: 5,
+    name: 'Cursor Glow',
+  },
 ]
