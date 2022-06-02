@@ -23,4 +23,8 @@ export const projects: Project[] = [
     id: 5,
     name: 'Cursor Glow',
   },
+  {
+    id: 6,
+    name: 'Curtain',
+  },
 ]
