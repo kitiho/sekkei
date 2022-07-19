@@ -27,4 +27,8 @@ export const projects: Project[] = [
     id: 6,
     name: 'Curtain',
   },
+  {
+    id: 7,
+    name: 'Infinite Scroll',
+  },
 ]
