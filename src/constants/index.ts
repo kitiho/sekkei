@@ -35,4 +35,8 @@ export const projects: Project[] = [
     id: 8,
     name: 'Smooth Interpolation Function',
   },
+  {
+    id: 9,
+    name: 'Text Clone',
+  },
 ]
