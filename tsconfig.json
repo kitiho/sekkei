@@ -4,7 +4,7 @@
     "module": "ESNext",
     "target": "es2016",
     "lib": ["DOM", "ESNext"],
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "incremental": false,
     "skipLibCheck": true,
@@ -13,6 +13,7 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
     "types": [
       "vite/client",
       "vite-plugin-pages/client"

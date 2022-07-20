@@ -31,4 +31,8 @@ export const projects: Project[] = [
     id: 7,
     name: 'Infinite Scroll',
   },
+  {
+    id: 8,
+    name: 'Smooth Interpolation Function',
+  },
 ]
