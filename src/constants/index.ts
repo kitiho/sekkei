@@ -39,4 +39,12 @@ export const projects: Project[] = [
     id: 9,
     name: 'Text Clone',
   },
+  {
+    id: 10,
+    name: 'Custom Cursor',
+  },
+  {
+    id: 11,
+    name: 'Wave Plane Effect',
+  },
 ]

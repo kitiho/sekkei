@@ -7,6 +7,7 @@ import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
+import glslify from 'rollup-plugin-glslify'
 
 export default defineConfig({
   resolve: {
@@ -17,6 +18,10 @@ export default defineConfig({
   plugins: [
     Vue({
       reactivityTransform: true,
+    }),
+    glslify({
+      include: ['**/*.glsl'],
+      exclude: 'node_modules/**',
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -41,6 +46,7 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     Unocss(),
+
   ],
 
   // https://github.com/vitest-dev/vitest
