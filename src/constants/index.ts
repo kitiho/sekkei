@@ -47,4 +47,8 @@ export const projects: Project[] = [
     id: 11,
     name: 'Wave Plane Effect',
   },
+  {
+    id: 12,
+    name: 'Scroll Text Outline Effect',
+  },
 ]

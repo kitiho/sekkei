@@ -16,7 +16,6 @@ function init() {
   const shaderMaterial = {
     uniforms: {
       time: { value: uTime },
-      resolution: { value: new THREE.Vector2(sizes.width, sizes.height) },
       uTexture: { value: texture },
     },
     // vertexShader
