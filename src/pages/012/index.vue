@@ -46,7 +46,6 @@ onMounted(() => {
     top: 45%;
     left: 50%;
     z-index: 2;
-
   }
 
   .text-parent {

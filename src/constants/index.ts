@@ -51,4 +51,8 @@ export const projects: Project[] = [
     id: 12,
     name: 'Scroll Text Outline Effect',
   },
+  {
+    id: 13,
+    name: 'Locomotive Scroll, GSAP practice',
+  },
 ]

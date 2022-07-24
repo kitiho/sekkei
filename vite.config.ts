@@ -8,6 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import glslify from 'rollup-plugin-glslify'
+import { VitePluginFonts } from 'vite-plugin-fonts'
 
 export default defineConfig({
   resolve: {
@@ -18,6 +19,11 @@ export default defineConfig({
   plugins: [
     Vue({
       reactivityTransform: true,
+    }),
+    VitePluginFonts({
+      google: {
+        families: ['syncopate', 'Bai Jamjuree', 'Bodoni Moda'],
+      },
     }),
     glslify({
       include: ['**/*.glsl'],
