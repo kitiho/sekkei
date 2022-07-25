@@ -55,4 +55,8 @@ export const projects: Project[] = [
     id: 13,
     name: 'Locomotive Scroll, GSAP practice',
   },
+  {
+    id: 14,
+    name: 'Threejs Shader Scroll Image',
+  },
 ]
