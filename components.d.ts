@@ -4,7 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-
+    Cloud: typeof import('./src/components/Cloud.vue')['default']
   }
 }
 
