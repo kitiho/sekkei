@@ -53,7 +53,7 @@ function init() {
         emissiveIntensity: 0.8,
       })
 
-      for (let p = 0, l = 200; p < l; p++) {
+      for (let p = 0, l = 210; p < l; p++) {
         const particle = new THREE.Mesh(smokeGeo, smokeMaterial)
 
         particle.position.set(
